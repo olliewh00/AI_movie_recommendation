@@ -11,6 +11,15 @@
 - **🎨 Modern UI**: Sleek, dark-themed interface with glassmorphism effects.
 - **🚀 Fast Performance**: Optimized with sparse matrices to handle large datasets efficiently.
 
+## 🎥 Demo
+Check out the app in action!
+
+### Video Demo
+![App Demo](demo/app_demo.webp)
+
+### Recommendation Results
+![Recommendation Results](demo/recommendation_results.png)
+
 ## 🛠️ Tech Stack
 - **Backend**: Python, Flask
 - **Machine Learning**: Scikit-Learn, Pandas, Scipy (Sparse Matrices)
