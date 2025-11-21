@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommender</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Movie<span class="highlight">Mind</span></h1>
+        <p>Discover your next favorite film with AI-powered recommendations.</p>
+      </header>
+
+      <main>
+        <div class="search-container">
+          <input
+            type="text"
+            id="movieInput"
+            placeholder="Enter a movie you love (e.g., Pulp Fiction)"
+            autocomplete="off"
+          />
+          <div id="suggestions" class="suggestions-box"></div>
+          <button id="recommendBtn">Get Recommendations</button>
+        </div>
+
+        <div id="loading" class="hidden">
+          <div class="spinner"></div>
+          <p>Finding similar movies...</p>
+        </div>
+
+        <div id="results" class="results-grid hidden">
+          <!-- Recommendations will appear here -->
+        </div>
+
+        <div id="error" class="error-message hidden"></div>
+      </main>
+
+      <footer>
+        <p>Powered by Collaborative Filtering & Machine Learning
+        </p>
+        <p>
+            Made with love by Olliewh00
+        </p>
+      </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
